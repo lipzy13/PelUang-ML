@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{{ url_for('predictloc')}}" method="post">
+      <label for="dekatSekolah">Dekat sekolah?</label>
+      <select name="dekatSekolah" id="dekatSekolah">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatRumahSakit">Dekat Rumah Sakit?</label>
+      <select name="dekatSekolah" id="dekatRumahSakit">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatPasar">Dekat Pasar?</label>
+      <select name="dekatPasar" id="dekatPasar">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatRumahWarga">Dekat Rumah Warga?</label>
+      <select name="dekatRumahWarga" id="dekatRumahWarga">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatFasum">Dekat Fasilitas Umum Masyarakat?</label>
+      <select name="dekatFasum" id="dekatFasum">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dilaluiKendaraanUmum">Dilalui Kendaraan Umum?</label>
+      <select name="dilaluiKendaraanUmum" id="dilaluiKendaraanUmum">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="kepadatanJalan">Kepadatan Jalan?</label>
+      <select name="kepadatanJalan" id="kepadatanJalan">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <br>
+      <label for="dekatPenginapan">Dekat Penginapan/Kost?</label>
+      <select name="dekatPenginapan" id="dekatPenginapan">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatPT">Dekat PT?</label>
+      <select name="dekatPT" id="dekatPT">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatRumahIbadah">Dekat Rumah Ibadah?</label>
+      <select name="dekatRumahIbadah" id="dekatRumahIbadah">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatStasiun">Dekat Stasiun?</label>
+      <select name="dekatStasiun" id="dekatStasiun">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatBandara">Dekat Bandara?</label>
+      <select name="dekatBandara" id="dekatBandara">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <label for="dekatTerminal">Dekat Terminal?</label>
+      <select name="dekatTerminal" id="dekatTerminal">
+        <option value="0">Tidak</option>
+        <option value="1">Ya</option>
+      </select>
+      <br>
+      <button type="submit">kirim</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{{ url_for('predict')}}" method="post">
+      <label for="latitude">Latitude</label>
+      <input type="text" id="latitude" name="latitude">
+      <br>
+      <label for="longitude">Longitude</label>
+      <input type="text" id="longitude" name="longitude">
+      <br>
+      <label for="bidangBisnis">Apa bidang bisnis yang sedang Anda rintis?</label>
+      <select name="bidangBisnis" id="bidangBisnis">
+        <option value="0">FnB</option>
+        <option value="1">Jasa Laundry</option>
+        <option value="2">Toko Obat</option>
+        <option value="3">Peralatan ATK</option>
+        <option value="4">Toko Kelontong</option>
+      </select>
+      <br>
+      <button type="submit">kirim</button>
+    </form>
+
+</body>
+</html>
