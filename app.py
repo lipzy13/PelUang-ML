@@ -75,7 +75,7 @@ def read_data():
             "data": {
                 'latitude': data['latitude'],
                 'longitude': data['longitude'],
-                'bidangBisnis': data['bidangBisnis'],
+                'industry': data['industry'],
             }
         }), 200
 
@@ -86,8 +86,8 @@ def predict():
         data = request.get_json(force=True)
         latitude = float(data['latitude'])
         longitude = float(data['longitude'])
-        bidangBisnis = int(data['bidangBisnis'])
-        nearest_points = find_nearest_points(latitude, longitude, df, user_cluster=bidangBisnis).tolist()
+        industry = int(data['industry'])
+        nearest_points = find_nearest_points(latitude, longitude, df, user_cluster=industry).tolist()
         return jsonify({
             "status": {
                 "code": 200,
@@ -142,4 +142,5 @@ def predictloc():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=8080)
+
